@@ -1,4 +1,4 @@
-<app-search-area></app-search-area>
+<app-search-area (search)= 'getProfileInfo($event)'></app-search-area>
 <div class="container">
     <div class="row">
         <p>{{profile.login }}</p>
