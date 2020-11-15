@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h3>Github user search</h3>
+                </div>
+                <form class = 'form-inline'  >
+                    <div class="form-group">
+                        <input name = 'user'  size = '40' type='search' class = 'form-control' placeholder = 'github-user' [(ngModel)]= 'githubUserQuery' name="githubUserQuery">
+                    </div>
+                    
+                    <div>
+                        <input type = 'submit' value = 'Search' class = 'btn btn-secondary btn-sm' (click)="clicked()">
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
