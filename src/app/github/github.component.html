@@ -1,12 +1,27 @@
-<app-search-area (search)= 'getProfileInfo($event)'></app-search-area>
+<app-search-area (search)='getProfileInfo($event)'></app-search-area>
 <div class="container">
     <div class="row">
-        <p>{{profile.login }}</p>
+        <div class="col-md-4">
+            <p>{{profile.login }}</p>
+
+        </div>
+
 
     </div>
     <div class="row">
-        <div class="col-md-3" *ngFor = 'let repo of repos'>
-<p>{{repo.name }}</p>
+        <div class="col-md-3" *ngFor='let repo of repos'>
+<div class="card">
+    <div class="card-header">
+        <p>{{repo.name }}</p>
+    </div>
+    <div class="card-body">
+        <p>{{repo.created_at }}</p>
+        <p>{{repo.description }}</p>
+        <a href='{{ repo.html_url }}' target='_blank' class='btn btn-sm btn-success'>View on Github</a>
+    </div>
+</div>
+            
+            
         </div>
     </div>
 </div>
