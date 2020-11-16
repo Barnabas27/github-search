@@ -10,9 +10,9 @@ Barnabas Kamau.
 Git-Search-App is an angular app that utilizes github API to enable user to search for a github user and have their public repositories displayed.
 
 # Visual
-<image src = './assets/Screenshot from 2020-11-16 12-00-58.png'>
+<image src = 'https://github.com/Barnabas27/github-search/blob/master/src/assets/Screenshot%20from%202020-11-16%2012-00-58.png'>
 
-<image src = './assets/Screenshot from 2020-11-16 12-01-08.png'>
+<image src = 'https://github.com/Barnabas27/github-search/blob/master/src/assets/Screenshot%20from%202020-11-16%2012-01-08.png'>
 
 # Requirement.
 Because the project has dependencies that require Node together with NPM make sure these are installed and working before proceeding.
