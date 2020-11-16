@@ -36,7 +36,7 @@ Because the project has dependencies that require Node together with NPM make su
 # Known Bugs.
 No known bugs.
 
-# Further helop
+# Further help
 Get more help on the Angular CLI by running the [ng help] 
  # License
-https://opensource.org/licenses/MIT (c) Barnabas
+https://opensource.org/licenses/MIT (c) Barnabas @ 2020
