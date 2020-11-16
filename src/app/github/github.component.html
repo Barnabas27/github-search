@@ -2,21 +2,32 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <p>{{profile.login }}</p>
-
+            <div class = 'profil mt-4'>
+                <div >
+                    <img src="{{profile.avatar_url}}" alt="">
+                </div>
+                <div class = 'title ml-4 mb-7'>
+                    <p>Name: {{profile.login }}</p>
+                    <p>Followers:{{ profile.followers }}</p>
+                    <p>Following: {{profile.following }}</p>
+                </div>
+           
+        </div>
         </div>
 
 
     </div>
+    <br/>
     <div class="row">
         <div class="col-md-3" *ngFor='let repo of repos'>
 <div class="card">
     <div class="card-header">
-        <p>{{repo.name }}</p>
+        <p>{{repo.name }}</p> 
     </div>
-    <div class="card-body">
-        <p>{{repo.created_at }}</p>
+    <div class="card-body"> 
+        <p>{{repo.created_at | date}}</p>
         <p>{{repo.description }}</p>
+        <hr/>
         <a href='{{ repo.html_url }}' target='_blank' class='btn btn-sm btn-success'>View on Github</a>
     </div>
 </div>
